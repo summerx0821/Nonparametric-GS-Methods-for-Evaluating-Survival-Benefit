@@ -1,7 +1,4 @@
----
-title: "NG"
-output: html_document
----
+
 
 # User's guide of R functions for "Nonparametric Group Sequential Methods for Evaluating Survival Benefit from Multiple Short-Term Follow-up Windows"
 We provide guidelines for using the XiaMurrayTayob.gstest function that calculates critical values for group sequential monitoring of the test proposed in Nonparametric Group Sequential Methods for Evaluating Survival Benefit from Multiple Short-Term Follow-up Windows by Xia, Murray and Tayob.  A simulated data example is given so that correct use of this function can be easily verified.  As output, the function provides the calculated test statistics at each analysis time (\$standardized.test.statistics), the estimated correlation between test statistics at the different interim analyses (\$correlation.of.statistics), OF efficacy critical values (\$efficacy.critical.value) and safety critical values (\$safety.critical.value) as specified by a user supplied argument  and  indicators that the trial should be stopped for efficacy ($efficacy.stop) or safety (\$safety.stop).
