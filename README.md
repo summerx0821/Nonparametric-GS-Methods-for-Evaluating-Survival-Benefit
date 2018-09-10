@@ -5,7 +5,7 @@ We provide guidelines for using the XiaMurrayTayob.gstest function that calculat
 XiaMurrayTayob.gstest(X, delta, E, group, s, Tau, alpha.efficacy=0.025, alpha.safety=0.025, safety.bound="JT", overall.alpha.safety.JT=0.2)
 
 ### Arguments:
-* X: a vector of the observed follow up times at the current analysis time, s, for the individuals in the study ($X_i(s), i=1,\dots,n(s)$ from Xia, Murray and Tayob reference) $\sum_{i=1}^n X_i$
+* X: a vector of the observed follow up times at the current analysis time, s, for the individuals in the study (`$X_i(s), i=1,\dots,n(s)$` from Xia, Murray and Tayob reference) $\sum_{i=1}^n X_i$
 * delta: a vector of the status indicators at the current analysis time, $s$, for the individuals in the study,  1=event, 0=otherwise ($\delta_i(s), i=1,\dots,n(s)$ from Xia, Murray and Tayob reference)
 * E: a vector of individual entry times; this is on the same scale with the analysis time, s ($E_i, i=1,\dots,n(s)$ from Xia, Murray and Tayob reference)
 * group: a vector of the treatment group indicators for individuals in the study, group=1 or 2 (X, delta, E and group must have the same length)
