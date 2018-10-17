@@ -69,7 +69,7 @@ XiaMurrayTayob.gstest <- function(X, delta, E, group, s, Tau,
   v <- s/max(s)
   #Efficacy-OF
   cum.alpha.effi <- 1-pnorm(qnorm(1-alpha.efficacy)/sqrt(v))
-  alpha.each.effi <- c(cum.alpha.effi[1],(cum.alpha.effi[-1]-cum.alpha.effi[-5])/(1-cum.alpha.effi[-5]))
+  alpha.each.effi <- c(cum.alpha.effi[1],(cum.alpha.effi[-1]-cum.alpha.effi[-length(s)])/(1-cum.alpha.effi[-length(s)]))
   
   #Safety
   if (safety.bound == "OF"){ cum.alpha.safe <- 1-pnorm(qnorm(1-alpha.safety)/sqrt(v)) }
@@ -81,7 +81,7 @@ XiaMurrayTayob.gstest <- function(X, delta, E, group, s, Tau,
     #projected % information at 1st look=v[1]
     cum.alpha.safe <- overall.alpha.safety.JT*v^w
   }
-  alpha.each.safe <- c(cum.alpha.safe[1],(cum.alpha.safe[-1]-cum.alpha.safe[-5])/(1-cum.alpha.safe[-5]))
+  alpha.each.safe <- c(cum.alpha.safe[1],(cum.alpha.safe[-1]-cum.alpha.safe[-length(s)])/(1-cum.alpha.safe[-length(s)]))
   
   #Critical values
   critical.effi <- Find.critical.Z(Z.T, alpha.each.effi)
