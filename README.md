@@ -17,3 +17,6 @@ XiaMurrayTayob.gstest(X, delta, E, group, s, Tau, alpha.efficacy=0.025, alpha.sa
 * alpha.safety: overall rate of stopping incorrectly for safety when the null hypothesis is true
 * safety.bound: a choice of "OF" (O'Brien and Fleming), "Pocock" or "JT" (the modified Jennison and Turnbull bound proposed by Xia, Murray and Tayob)
 * overall.alpha.safety.JT: this argument is only used when safety.bound="JT". A user-specified overall error rate for exceeding the safety boundary under the null hypothesis and incorrectly stopping the trial as a result.
+
+
+Reference: _Xia, M., Murray, S., & Tayob, N. (2019). Nonparametric group sequential methods for evaluating survival benefit from multiple short‐term follow‐up windows. Biometrics, 75(2), 494-505._
